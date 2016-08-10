@@ -1,5 +1,11 @@
 # RubyVersionSorter
 
+[![Gem Version](https://badge.fury.io/rb/ruby_version_sorter.svg)](https://badge.fury.io/rb/ruby_version_sorter)
+[![Build Status](https://travis-ci.org/jollygoodcode/ruby_version_sorter.svg)][travis]
+
+[gem]: https://rubygems.org/gems/ruby_version_sorter
+[travis]: https://travis-ci.org/jollygoodcode/ruby_version_sorter
+
 Sort Ruby Versions for human! Works for Ruby and JRuby.
 
 ## Installation

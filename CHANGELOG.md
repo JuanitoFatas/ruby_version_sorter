@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.0.1
+
+2016.08.12
+
+Simplify the implementation.
+
 ## 1.0.0
 
 2016.08.10.

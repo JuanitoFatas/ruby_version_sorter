@@ -3,7 +3,7 @@ RSpec.describe RubyVersionSorter, "JRuby" do
     it "works for all JRuby versions as of 2016.08.09" do
       result = RubyVersionSorter.sort IO.read("spec/fixtures/jruby/versions.txt").split("\n").shuffle
 
-      expect(result).to match_array(
+      expect(result).to eq(
         IO.read("spec/fixtures/jruby/sorted.txt").split("\n")
       )
     end
@@ -20,7 +20,7 @@ RSpec.describe RubyVersionSorter, "JRuby" do
         ].shuffle
       )
 
-      expect(result).to match_array(
+      expect(result).to eq(
         [
           "9.1.1.0",
           "9.1.2.0",

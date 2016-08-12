@@ -3,7 +3,7 @@ RSpec.describe RubyVersionSorter, "Ruby" do
     it "works for all Ruby versions as of 2016.08.09" do
       result = RubyVersionSorter.sort IO.read("spec/fixtures/ruby/versions.txt").split("\n").shuffle
 
-      expect(result).to match_array(
+      expect(result).to eq(
         IO.read("spec/fixtures/ruby/sorted.txt").split("\n")
       )
     end
@@ -21,7 +21,7 @@ RSpec.describe RubyVersionSorter, "Ruby" do
         ].shuffle
       )
 
-      expect(result).to match_array(
+      expect(result).to eq(
         [
           "2.4.0-preview1", "2.4.0-rc1", "2.4.0",
           "2.5.0", "2.6.0",
